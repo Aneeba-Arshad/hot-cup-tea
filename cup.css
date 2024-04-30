@@ -1,0 +1,137 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(11, 195, 133);
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    top: 50px;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    color:brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.smile i{
+    position: absolute;
+    top: 2px;
+    left: 74%;
+    align-items: center;
+    color: yellow;
+    font-size: 60px;
+}
+.cup{
+    position:absolute;
+    height: 250px;
+    width: 200px;
+    left:30%;
+    top:-55%;
+    background-image:linear-gradient(to right ,#f9f9f9,#b4adad);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%; 
+    border-top-left-radius:15%;
+    border-top-right-radius:15%; 
+}
+.cup .handle{
+    position: absolute;
+    border: 25px solid #d9d9d9;
+    margin-left: 100px;
+    margin-top: 30px;
+    height: 120px;
+    width: 130px;
+    border-radius: 60%;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform:rotate(49deg) ;
+}
+.cup .top{
+    position:absolute;
+    left:-1%;
+    top:-3%;
+    width:205px;
+    height: 60px;
+    background-image:linear-gradient(to right ,#f9f9f9,#b4adad);
+    border-radius: 50%;
+}
+.cup .circle{
+    position: absolute;
+    left:5%;
+    top:-2%;
+    background-image: linear-gradient(to left,#f9f9f9,#d9d9d9);
+    width:180px;
+    height: 50px;
+    border-radius: 50%;
+    }
+.cup .circle .tea{
+    position: absolute;
+    top:16px;
+    left: 16px;
+    background-color: #d88e2d;
+    height: 30px;
+    width: 150px;
+    border-radius: 50%;
+}
+.plate{
+    position: absolute;
+    left: 30%;
+    top: 62%;
+    background:linear-gradient(to right ,#f9f9f9,#d9d9d9);
+    height: 200px;
+    width: 500px;
+    border-radius: 50%;
+}
+.plate .shadow{
+    position: absolute;
+    background-image:linear-gradient(to right ,#f9f9f9,#d9d9d9);
+    height: 100px;
+    width: 177px;
+    border-radius: 50%;
+    margin-top:38px;
+    margin-left: 159px;
+    box-shadow: 5px 5px 100px 35px #9d9b9b;
+
+}
+.smoke{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+.smoke span{
+    position: relative;
+    top: 150px;
+    left: 41%;
+    display: block;
+    min-width:5px;
+    height: 70px;
+    margin: 0 2px 50px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: animi 3s linear infinite;
+    filter: blur(5px);
+    animation-delay: calc(var(--i) * -0.5s);
+}
+ @keyframes animi {
+    0%{
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-300px) scaleX(10);
+    }
+}
